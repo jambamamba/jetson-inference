@@ -6,7 +6,13 @@
 ./build.sh clean=true
 ./build.sh deploy="192.168.4.123" #the IP of ORIN
 ```
-
+The build script will generate these executables:
+```
+./build/aarch64/bin/imagenet
+./build/aarch64/bin/detectnet
+./build/aarch64/bin/segnet
+./build/aarch64/bin/posenet 
+```
 
 <img src="https://github.com/dusty-nv/jetson-inference/raw/master/docs/images/deep-vision-header.jpg" width="100%">
 
