@@ -14,6 +14,23 @@ The build script will generate these executables:
 ./build/aarch64/bin/posenet 
 ```
 
+To connect to device over USB-C cable:
+
+```
+sudo apt update 
+sudo apt install -y screen
+
+sudo screen /dev/ttyACM0 115200
+
+#user: isgdev
+#password: a
+```
+
+If you deploy to the device, it will copy runexamples.sh script to /home/isgdev/bin
+Look at this script to see how the imagenet, detectnet, segnet and posenet can be used
+
+
+
 <img src="https://github.com/dusty-nv/jetson-inference/raw/master/docs/images/deep-vision-header.jpg" width="100%">
 
 # Deploying Deep Learning
