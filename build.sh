@@ -112,8 +112,8 @@ function main(){
     local clean="true"
     parseArgs $@
 
-    # time build clean="${clean}"
-    deploy ip="${ip}"
+    time build clean="${clean}"
+    #deploy ip="${ip}"
 }
 
 main $@
