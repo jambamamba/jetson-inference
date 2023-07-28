@@ -1,3 +1,13 @@
+# Crosscompiling this project for NVIDIA Jetson ORIN
+
+```
+./enter-docker.sh path/to/nvidia-jetson-orin.v1.tar.gz
+./build.sh
+./build.sh clean=true
+./build.sh deploy="192.168.4.123" #the IP of ORIN
+```
+
+
 <img src="https://github.com/dusty-nv/jetson-inference/raw/master/docs/images/deep-vision-header.jpg" width="100%">
 
 # Deploying Deep Learning

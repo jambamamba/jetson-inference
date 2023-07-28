@@ -108,12 +108,14 @@ function deploy(){
 
 
 function main(){
-    local ip="192.168.4.217"
+    local deploy=""
     local clean="true"
     parseArgs $@
 
     time build clean="${clean}"
-    #deploy ip="${ip}"
+    if [ "${deploy}" != "" ]; then
+       deploy ip="${deploy}"
+    fi
 }
 
 main $@
